@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+    <style>
+        header h1{
+            text-align: center;
+        }
+        .navbar-nav .nav-link.active {
+            color: white;
+        }
+
+        .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+            display: flex;
+            flex-wrap: inherit;
+            justify-content: center;
+        }
+
+        section{
+            background-color: #ffffff;
+            padding: 15px;
+        }
+
+        section h2{
+            text-align: center;
+        }
+
+        section .tab-content{
+            text-align: center;
+        }
+
+        header{
+            top: 0;
+            left: 0;
+            background-color: #9e9c9c;
+            font-weight: bold;
+        }
+
+        #vick{
+            background-color: darkblue;
+        }
+
+        #ContZ img{
+            padding-top: 35px;
+            width: 25%;
+        }
+
+        #UNot{
+            text-align: center;
+            border-top: 8px solid black;
+        }
+
+        #UNot img{
+            width: 25%;
+            padding: 25px;
+        }
+
+        .ContaDis img{
+            background-color: black;
+        }
+    </style>
+<body>
+    <header id="cabecalho">
+        <h1>Portal novos mundos</h1>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#UNot">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>inicio</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <article class="card">
+                                <img id="Corru" src="https://media.discordapp.net/attachments/1156014622097297499/1298346791326187631/post2.png?ex=67193b2d&is=6717e9ad&hm=04a1f1bed90c50147bedda45133ac98f682ce99d4818d7871838face804fd2c8&=&format=webp&quality=lossless&width=469&height=469">
+                                <div class="card-body text-bg-dark">
+                                    <h4 class="card-title">corrupção na escola Yumei Gakuen</h4>
+                                    <h5 class="card-subtitle">Nóticia</h5>
+                                    <p class="card-text">Caso de corrupção foi descoberto no hospital e na Escola Yumei Gakuen</p>
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <div class="card text-bg-dark">
+                                <img id="Vick" src="https://media.discordapp.net/attachments/997450037275668531/1292714029529305161/IMG_2896.jpg?ex=67192c82&is=6717db02&hm=a1d4f00215e32393da89c125241bff22e1d99191b48554c53607a30d6b21c7b4&=&format=webp&width=364&height=469">
+                                <div class="card-body" id="vick">
+                                    <h4 class="card-title">Vick Roselei</h4>
+                                    <h5 class="card-subtitle">Clone?</h5>
+                                    <p class="card-text">Foi vista em dois universos distintos... talvez ela apenas pulou para outro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card text-bg-dark">
+                                <img id="Nobu" src="https://media.discordapp.net/attachments/997450037275668531/1287945142052847677/f98f7b293e167ab72b616c5370ce31f0.jpg?ex=6718f6a2&is=6717a522&hm=44c31b5f2ba3e60ce9230b5baa894cca3f93f7b044837b0df9155fdf2971b40f&=&format=webp&width=350&height=350">
+                                <div class="card-body">
+                                    <h4 class="card-title">Amida Hanyo</h4>
+                                    <h5 class="card-subtitle">Bct no lugar do Pau</h5>
+                                    <p class="card-text">Apanha até pro cyber.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="UNot">
+            <h2>Contato</h2>
+            <div class="container" id="ContZ">
+                <img src="./images/token_1.png">
+                <h3>Criador Zero</h3>
+            </div>
+            <div class="container">
+                <h5>Sou um criador freelancer, que cria o que gosta e quando da na telha, esse site é apenas um desafio que peguei como desafio de recriar um site de um amigo totalmente em bootstrap</h5>
+            </div>
+            <div class="container contDis">
+                <img src="./images/2566-logo-discord.gif">
+                <h4>Nick do discord: <a href="">@Zero_Zero0</a></h4> 
+            </div>
+            <div class="container Git" id="Gith">
+                <img src="./images/token_2.png">
+                <h2>Meu perfil do GitHub aonde possui alguns trabalhos já feitos por mim dentro da minha grade curricular da empresa EBAC</h2>
+            <div class="container ContaG">
+                <img src="./images/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif">
+                <h4>Perfil do Git: <a href="https://github.com/Mrzero001002">Mr_Zero</a></h4>
+            </div>
+            </div>
+        </section>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
