@@ -10,8 +10,12 @@
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalEX">
         Abrir modal
     </button>
-    <div class="modal" id="modalEX" data-bs-backdrop="static">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modalEX" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <!--
+            Adicionada a classe 'fade' para permitir a animação padrão do Bootstrap
+            Adicionada a classe 'modal-dialog-centered' para centralizar o modal na tela
+            -->
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>Título modal</h5>
@@ -21,21 +25,28 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus praesentium repudiandae cupiditate, architecto dolore quibusdam, voluptates provident autem, magni omnis illo nam at tenetur pariatur sequi veniam nihil incidunt!
                 </p>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
-                </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+            </div>
+            <!--
+                    Modal-footer movido para fora do modal-body.
+                    Isso corrige o problema de estrutura do modal.
+            -->
+
         </div>
     </div>
 
     <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const modalEx = new booststrap.Modal('#modalEX');
+            const modalEx = new bootstrap.Modal('#modalEX');
+            // Correção do erro de digitação: 'booststrap' -> 'bootstrap'
             setTimeout(function() {
                 modalEx.show();
-            }, 3000);
+                // Mostra o modal automaticamente após (1000 = 1 segundo; logo 3000 = 3 segundos)
+            }, 1000);
         })
     </script>
 </body>

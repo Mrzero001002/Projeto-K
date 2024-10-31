@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .card-img-overlay{
+            background-color: rgb(0,0,0, 0.7);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Bootstrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <article class="card">
+                    <header class="card-header">
+                        card header
+                    </header>
+                    <img id="Nobu" src="https://i.pinimg.com/564x/10/6b/e0/106be0e484fb532901d55fa9a6096d55.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Oda Nobunaga</h4>
+                        <h5 class="card-subtitle">Mulher</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, hic, accusantium libero recusandae at ut aut, praesentium nobis iure necessitatibus eius. Unde ipsa deleniti eaque veniam quibusdam consectetur illum dolorem.</p>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2005 as 16:30</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img id="Nobu" src="https://i.pinimg.com/564x/9b/c5/53/9bc5536aeeaa63a82fc28fdc72b89386.jpg">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Oda Nobunaga</h4>
+                        <h5 class="card-subtitle">Mulher</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, hic, accusantium libero recusandae at ut aut, praesentium nobis iure necessitatibus eius.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        card header
+                    </div>
+                    <img id="Nobu" src="https://i.pinimg.com/564x/10/6b/e0/106be0e484fb532901d55fa9a6096d55.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Oda Nobunaga</h4>
+                        <h5 class="card-subtitle">Mulher</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, hic, accusantium libero recusandae at ut aut, praesentium nobis iure necessitatibus eius. Unde ipsa deleniti eaque veniam quibusdam consectetur illum dolorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<!-- <div class="card-img-overlay"> faz com que o texto fique por cima da imagem. -->
+<!-- Para criar comentário CRTL+; -->

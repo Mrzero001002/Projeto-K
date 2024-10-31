@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+</head>
+    <style>
+        .navbar-nav .nav-link.active {
+            color: white;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section{
+            height: 100vh;
+            background-color: #ffffff;
+            padding: 65px;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Título</h1>
+                <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Promo">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Con">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-emails" type="button" class="btn btn-warning">Checar mensagens</button>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>inicio</h2>
+        </section>
+        <section id="Produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#taba1" class="nav-link active" type="button">Eletronicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#taba2" class="nav-link" type="button">Moda masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#taba3" class="nav-link" type="button">Moda feminina</button>
+                </nav>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="taba1">
+                    conteudo Eletronicos
+                </div>
+                <div class="tab-pane" id="taba2">
+                    conteudo Moda M
+                </div>
+                <div class="tab-pane" id="taba3">
+                    conteudo Moda F
+                </div>
+            </div>
+        </section>
+        <section id="Promo">
+            <h2>Promos</h2>
+        </section>
+        <section id="Con">
+            <h2>contato</h2>
+        </section>
+    </div>
+
+    <div class="toast-container">
+        <div class="toast" id="mensagens-alert">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas.
+            </div>
+        </div>
+    </div>
+
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        const activeT = document.getElementById('#btn-checar-emails')
+        const mensagens = document.getElementById('#mensagens-alert')
+
+        if(activeT){
+            activeT.addEventListener('clik', function(){
+                const toast = new bootstrap.Toast(mensagens)
+                toast.show()
+            })
+        }
+
+    </script>
+</body>
+</html>
